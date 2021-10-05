@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <style>
+        i {
+            font-size: 48px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-3">
+
+        <div class="row mb-5">
+            <div class="form-floating col-lg-6 col-sm-12 my-2">
+                <input type="text" name="local" id="local" class="form-control">
+                <label class="form-label" for="local">Insira aqui o Local:</label>
+            </div>
+            <div class="col-lg-4 col-sm-12 my-2">
+                <button class="btn btn-primary h-100 w-100" id="btn">Obter Clima</button>
+            </div>
+            <div class="col-lg-2 col-sm-12 text-center mt-2">
+                <i id="icon"></i>
+            </div>
+        </div>
+
+
+        <table class="table table-striped table-bordered">
+            <tr>
+                <td>Local:</td>
+                <td id="loc"></td>
+            </tr>
+            <tr>
+                <td>Latitude:</td>
+                <td id="lat"></td>
+            </tr>
+            <tr>
+                <td>Longitude:</td>
+                <td id="long"></td>
+            </tr>
+            <tr>
+                <td>Data/Hora:</td>
+                <td id="dt_hora"></td>
+            </tr>
+            <tr>
+                <td>Resumo:</td>
+                <td id="resumo"></td>
+            </tr>
+            <tr>
+                <td>Intensidade de precipitação:</td>
+                <td id="int_precipt"></td>
+            </tr>
+            <tr>
+                <td>Probabilidade de precipitação:</td>
+                <td id="prob_precipt"></td>
+            </tr>
+            <tr>
+                <td>Temperatura:</td>
+                <td id="temp"></td>
+            </tr>
+            <tr>
+                <td>Sensação térmica:</td>
+                <td id="senc_term"></td>
+            </tr>
+            <tr>
+                <td>Ponto de orvalho:</td>
+                <td id="pt_orv"></td>
+            </tr>
+            <tr>
+                <td>Umidade:</td>
+                <td id="umid"></td>
+            </tr>
+            <tr>
+                <td>Pressão:</td>
+                <td id="press"></td>
+            </tr>
+            <tr>
+                <td>Velocidade do vento:</td>
+                <td id="vel_vent"></td>
+            </tr>
+            <tr>
+                <td>Rajada de vento:</td>
+                <td id="raj_vent"></td>
+            </tr>
+            <tr>
+                <td>Direção do vento:</td>
+                <td id="dir_vent"></td>
+            </tr>
+            <tr>
+                <td>Cobertura de nuvens:</td>
+                <td id="cobert_nuv"></td>
+            </tr>
+            <tr>
+                <td>Índice UV:</td>
+                <td id="uv"></td>
+            </tr>
+            <tr>
+                <td>Visibilidade:</td>
+                <td id="visib"></td>
+            </tr>
+            <tr>
+                <td>Ozônio:</td>
+                <td id="oz"></td>
+            </tr>
+            <tr>
+                <td>Deslocamento:</td>
+                <td id="desloc"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+
+</html>
