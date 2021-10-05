@@ -2,7 +2,7 @@ var latitude, longitude;
 
 function insertGoogleScript() {
     var google_api = document.createElement('script'),
-        api_key = 'AIzaSyDoWjpsX3rJ-exdgZ-2v7nMDQW0HOVPA-A';
+        api_key = 'CHAVECHAVECHAVECHAVECHAVECHAVE';
     google_api.src = 'https://maps.googleapis.com/maps/api/js?key=' + api_key + '&callback=initGoogleAPI&libraries=places,geometry';
     document.body.appendChild(google_api);
 }
